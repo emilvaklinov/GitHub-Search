@@ -18,6 +18,9 @@
 		481D254C2473F1B300F2D6BE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D254B2473F1B300F2D6BE /* Parser.swift */; };
 		481D254E2473F22E00F2D6BE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D254D2473F22E00F2D6BE /* Model.swift */; };
 		481D25502473F92C00F2D6BE /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D254F2473F92C00F2D6BE /* SearchCell.swift */; };
+		481D25552474184B00F2D6BE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D25542474184B00F2D6BE /* DetailedViewController.swift */; };
+		481D255924741C5C00F2D6BE /* ResultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D255824741C5C00F2D6BE /* ResultViewCell.swift */; };
+		481D255B24741C7A00F2D6BE /* WebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D255A24741C7A00F2D6BE /* WebViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		481D254B2473F1B300F2D6BE /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		481D254D2473F22E00F2D6BE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		481D254F2473F92C00F2D6BE /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		481D25542474184B00F2D6BE /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		481D255824741C5C00F2D6BE /* ResultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewCell.swift; sourceTree = "<group>"; };
+		481D255A24741C7A00F2D6BE /* WebViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				481D25252473F12600F2D6BE /* GitHub Search */,
+				481D254B2473F1B300F2D6BE /* Parser.swift */,
+				481D2557247418A500F2D6BE /* Views */,
+				481D25562474186F00F2D6BE /* ViewControllers */,
 				481D25532473F9CD00F2D6BE /* Core Data */,
 				481D25522473F9A300F2D6BE /* Model */,
 				481D25512473F93F00F2D6BE /* Custom Cells */,
@@ -92,11 +101,6 @@
 			children = (
 				481D25262473F12600F2D6BE /* AppDelegate.swift */,
 				481D25282473F12600F2D6BE /* SceneDelegate.swift */,
-				481D254B2473F1B300F2D6BE /* Parser.swift */,
-				481D252A2473F12600F2D6BE /* ViewController.swift */,
-				481D252C2473F12600F2D6BE /* Main.storyboard */,
-				481D25322473F12900F2D6BE /* Assets.xcassets */,
-				481D25342473F12900F2D6BE /* LaunchScreen.storyboard */,
 				481D25372473F12900F2D6BE /* Info.plist */,
 			);
 			path = "GitHub Search";
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				481D254F2473F92C00F2D6BE /* SearchCell.swift */,
+				481D255824741C5C00F2D6BE /* ResultViewCell.swift */,
+				481D255A24741C7A00F2D6BE /* WebViewCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -133,6 +139,25 @@
 				481D252F2473F12600F2D6BE /* GitHub_Search.xcdatamodeld */,
 			);
 			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		481D25562474186F00F2D6BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				481D252A2473F12600F2D6BE /* ViewController.swift */,
+				481D25542474184B00F2D6BE /* DetailedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		481D2557247418A500F2D6BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				481D252C2473F12600F2D6BE /* Main.storyboard */,
+				481D25322473F12900F2D6BE /* Assets.xcassets */,
+				481D25342473F12900F2D6BE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				481D252B2473F12600F2D6BE /* ViewController.swift in Sources */,
+				481D255924741C5C00F2D6BE /* ResultViewCell.swift in Sources */,
 				481D25272473F12600F2D6BE /* AppDelegate.swift in Sources */,
+				481D25552474184B00F2D6BE /* DetailedViewController.swift in Sources */,
 				481D254C2473F1B300F2D6BE /* Parser.swift in Sources */,
+				481D255B24741C7A00F2D6BE /* WebViewCell.swift in Sources */,
 				481D25502473F92C00F2D6BE /* SearchCell.swift in Sources */,
 				481D254E2473F22E00F2D6BE /* Model.swift in Sources */,
 				481D25312473F12600F2D6BE /* GitHub_Search.xcdatamodeld in Sources */,

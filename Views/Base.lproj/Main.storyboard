@@ -96,11 +96,87 @@
                     <connections>
                         <outlet property="searchBar" destination="87n-mQ-Qnp" id="ooj-Ks-ywI"/>
                         <outlet property="tableView" destination="Zqc-Ak-qOk" id="nP9-FI-vja"/>
+                        <segue destination="KHe-o9-DrS" kind="show" identifier="showDetails" id="6NY-GP-cVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1166" y="130"/>
+        </scene>
+        <!--Detailed View Controller-->
+        <scene sceneID="vVW-E1-l4T">
+            <objects>
+                <tableViewController id="KHe-o9-DrS" customClass="DetailedViewController" customModule="GitHub_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nCr-Jx-nDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" textLabel="Rm5-98-83V" detailTextLabel="tZw-Da-3ek" style="IBUITableViewCellStyleValue1" id="zIU-72-WMV" customClass="ResultViewCell" customModule="GitHub_Search" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zIU-72-WMV" id="ncu-KR-ETd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rm5-98-83V">
+                                            <rect key="frame" x="16" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tZw-Da-3ek">
+                                            <rect key="frame" x="315" y="12" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="webCell" rowHeight="480" id="BeJ-wf-5QC" customClass="WebViewCell" customModule="GitHub_Search" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="71.5" width="375" height="480"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BeJ-wf-5QC" id="zfm-yy-FLf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPl-cD-hfw">
+                                            <rect key="frame" x="16" y="11" width="343" height="458"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <wkWebViewConfiguration key="configuration">
+                                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                <wkPreferences key="preferences"/>
+                                            </wkWebViewConfiguration>
+                                        </wkWebView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yPl-cD-hfw" secondAttribute="bottom" id="D7x-l5-Ami"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yPl-cD-hfw" secondAttribute="trailing" id="aXu-Mj-qV8"/>
+                                        <constraint firstItem="yPl-cD-hfw" firstAttribute="top" secondItem="zfm-yy-FLf" secondAttribute="topMargin" id="awp-sA-Ez7"/>
+                                        <constraint firstItem="yPl-cD-hfw" firstAttribute="leading" secondItem="zfm-yy-FLf" secondAttribute="leadingMargin" id="t3V-Ph-gvl"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="webView" destination="yPl-cD-hfw" id="tep-kp-aqY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KHe-o9-DrS" id="hx7-rv-0Q3"/>
+                            <outlet property="delegate" destination="KHe-o9-DrS" id="B50-2H-8Kb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="s37-LO-bz3"/>
+                    <connections>
+                        <outlet property="detailedTableView" destination="nCr-Jx-nDC" id="S7r-Hb-i6d"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQu-vX-JZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AXr-C4-4L1">
