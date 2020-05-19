@@ -24,6 +24,7 @@
 		481D2560247421C200F2D6BE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D255F247421C200F2D6BE /* CoreDataStack.swift */; };
 		481D2565247443C100F2D6BE /* GitHubData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 481D2563247443C100F2D6BE /* GitHubData.xcdatamodeld */; };
 		48F5E0D924748B84004E6B60 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F5E0D824748B84004E6B60 /* WebKit.framework */; };
+		48F5E0DB24748EC8004E6B60 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5E0DA24748EC8004E6B60 /* Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		481D255F247421C200F2D6BE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		481D2564247443C100F2D6BE /* GitHubData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubData.xcdatamodel; sourceTree = "<group>"; };
 		48F5E0D824748B84004E6B60 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		48F5E0DA24748EC8004E6B60 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				481D25262473F12600F2D6BE /* AppDelegate.swift */,
 				481D25282473F12600F2D6BE /* SceneDelegate.swift */,
 				481D25372473F12900F2D6BE /* Info.plist */,
+				48F5E0DA24748EC8004E6B60 /* Extention.swift */,
 			);
 			path = "GitHub Search";
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				481D252B2473F12600F2D6BE /* ViewController.swift in Sources */,
 				481D255924741C5C00F2D6BE /* ResultViewCell.swift in Sources */,
 				481D25272473F12600F2D6BE /* AppDelegate.swift in Sources */,
+				48F5E0DB24748EC8004E6B60 /* Extention.swift in Sources */,
 				481D2560247421C200F2D6BE /* CoreDataStack.swift in Sources */,
 				481D2565247443C100F2D6BE /* GitHubData.xcdatamodeld in Sources */,
 				481D25552474184B00F2D6BE /* DetailedViewController.swift in Sources */,

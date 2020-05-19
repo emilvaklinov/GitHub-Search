@@ -58,7 +58,6 @@
                                                 <constraint firstAttribute="trailing" secondItem="TOn-Z1-ss9" secondAttribute="trailing" constant="10" id="II8-NW-fhk"/>
                                                 <constraint firstItem="NWr-5r-8m2" firstAttribute="leading" secondItem="hCw-hX-b0U" secondAttribute="leading" constant="10" id="KAO-02-Hi0"/>
                                                 <constraint firstAttribute="trailing" secondItem="gm6-1j-pfc" secondAttribute="trailing" constant="10" id="Lhg-ZD-qBB"/>
-                                                <constraint firstItem="TOn-Z1-ss9" firstAttribute="leading" secondItem="sUF-Le-c3M" secondAttribute="trailing" priority="750" constant="208.5" id="ZKI-re-ZPa"/>
                                                 <constraint firstAttribute="trailing" secondItem="NWr-5r-8m2" secondAttribute="trailing" constant="10" id="aEA-vc-82P"/>
                                                 <constraint firstItem="sUF-Le-c3M" firstAttribute="leading" secondItem="hCw-hX-b0U" secondAttribute="leading" constant="10" id="hge-fx-8ik"/>
                                                 <constraint firstItem="gm6-1j-pfc" firstAttribute="top" secondItem="NWr-5r-8m2" secondAttribute="bottom" constant="34" id="lm8-eu-U9I"/>
@@ -120,7 +119,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" textLabel="Rm5-98-83V" detailTextLabel="tZw-Da-3ek" style="IBUITableViewCellStyleValue1" id="zIU-72-WMV" customClass="ResultViewCell" customModule="GitHub_Search" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" textLabel="Rm5-98-83V" detailTextLabel="tZw-Da-3ek" style="IBUITableViewCellStyleValue1" id="zIU-72-WMV" customClass="ResultViewCell" customModule="GitHub_Search" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zIU-72-WMV" id="ncu-KR-ETd">

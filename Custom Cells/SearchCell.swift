@@ -14,6 +14,7 @@ class SearchCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         nameLabel.font = UIFont.boldSystemFont(ofSize: 20.0)

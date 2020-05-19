@@ -15,7 +15,6 @@ typealias RepoDetail = (String, String)
 class DetailedViewController: UITableViewController {
     
     
-    
     @IBOutlet var detailedTableView: UITableView!
     
     var selectedRepo: GitHubData?
@@ -32,12 +31,10 @@ class DetailedViewController: UITableViewController {
         
         detailedTableView.estimatedRowHeight = 80.00
         detailedTableView.rowHeight = UITableView.automaticDimension
-       
-
+                
     }
     
-    
-    
+
     func details() -> [(String, String)] {
         var items: [(String, String)] = []
         
@@ -102,7 +99,7 @@ class DetailedViewController: UITableViewController {
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
                 guard let data = data, error == nil else { return }
                 
-                
+               
                 // UI Update = Main Queue
                 DispatchQueue.main.async() {
                     if indexPath.row == 0{
@@ -115,13 +112,13 @@ class DetailedViewController: UITableViewController {
                         cell.imageView?.image = nil
                     }
                     cell.setNeedsLayout()
-                }
-                if indexPath.section == 0 && indexPath.row == 0 {
-                    cell.detailTextLabel?.textColor = .orange
-                }
-                if indexPath.section == 0 && indexPath.row == 1 {
-                    cell.detailTextLabel?.textColor = .black            }
+                
+            if indexPath.section == 0 && indexPath.row == 0 {
+            cell.detailTextLabel?.textColor = .orange
             }
+            if indexPath.section == 0 && indexPath.row == 1 {
+            cell.detailTextLabel?.textColor = .black
+                }
             if indexPath.section == 0 && indexPath.row == 2 {
                 cell.detailTextLabel?.textColor = .blue
             }
@@ -133,6 +130,8 @@ class DetailedViewController: UITableViewController {
             }
             if indexPath.section == 0 && indexPath.row == 5 {
                 cell.detailTextLabel?.textColor = .blue
+                    }
+                }
             }
             task.resume()
             
@@ -150,16 +149,16 @@ class DetailedViewController: UITableViewController {
                 components.path = "/\(htmlURLString)/blob/master/README.md"
                 return components.url
             }
-           
+            
             
             guard let finalUrl = url else {return cell}
             let requestObject = URLRequest(url: finalUrl)
             cell.webView.load(requestObject)
-
             
-    
+            
+            
             return cell
-        
+            
         default: return UITableViewCell()
             
         }
@@ -189,5 +188,5 @@ class DetailedViewController: UITableViewController {
     }
     
 }
-    
+
 

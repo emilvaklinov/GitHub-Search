@@ -138,7 +138,7 @@ class ViewController: UIViewController {
           }()
       }
 
-      // Not active
+      
       func removeDuplicates(array: [String]) -> [String] {
           var encountered = Set<String>()
           var result: [String] = []
