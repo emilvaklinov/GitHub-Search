@@ -18,7 +18,7 @@ struct GitHubRoot: Codable {
 struct Items: Codable {
     var id: Int
     var name: String
-    var fullName: String
+    var fullname: String
     var owner: Owner
     var htmlUrl: String
     var description: String?
@@ -29,7 +29,7 @@ struct Items: Codable {
     var score: Double
     
     enum CodingKeys: String, CodingKey {
-        case fullName = "full_name"
+        case fullname = "full_name"
         case htmlUrl = "html_url"
         case openIssues = "open_issues"
         case name,owner,description,language,forks,watchers,score,id
