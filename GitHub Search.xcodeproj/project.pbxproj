@@ -15,6 +15,7 @@
 		481D25332473F12900F2D6BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481D25322473F12900F2D6BE /* Assets.xcassets */; };
 		481D25362473F12900F2D6BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481D25342473F12900F2D6BE /* LaunchScreen.storyboard */; };
 		481D25412473F12900F2D6BE /* GitHub_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D25402473F12900F2D6BE /* GitHub_SearchTests.swift */; };
+		481D254C2473F1B300F2D6BE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D254B2473F1B300F2D6BE /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		481D253C2473F12900F2D6BE /* GitHub SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GitHub SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		481D25402473F12900F2D6BE /* GitHub_SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub_SearchTests.swift; sourceTree = "<group>"; };
 		481D25422473F12900F2D6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481D254B2473F1B300F2D6BE /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		481D251A2473F12600F2D6BE = {
 			isa = PBXGroup;
 			children = (
+				481D254B2473F1B300F2D6BE /* Parser.swift */,
 				481D25252473F12600F2D6BE /* GitHub Search */,
 				481D253F2473F12900F2D6BE /* GitHub SearchTests */,
 				481D25242473F12600F2D6BE /* Products */,
@@ -205,6 +208,7 @@
 			files = (
 				481D252B2473F12600F2D6BE /* ViewController.swift in Sources */,
 				481D25272473F12600F2D6BE /* AppDelegate.swift in Sources */,
+				481D254C2473F1B300F2D6BE /* Parser.swift in Sources */,
 				481D25312473F12600F2D6BE /* GitHub_Search.xcdatamodeld in Sources */,
 				481D25292473F12600F2D6BE /* SceneDelegate.swift in Sources */,
 			);
