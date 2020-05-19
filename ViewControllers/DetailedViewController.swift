@@ -31,7 +31,8 @@ class DetailedViewController: UITableViewController {
         
         detailedTableView.estimatedRowHeight = 80.00
         detailedTableView.rowHeight = UITableView.automaticDimension
-                
+        
+        createSpinnerView()
     }
     
 
@@ -165,7 +166,23 @@ class DetailedViewController: UITableViewController {
         
     }
     
-    
+    func createSpinnerView() {
+        let child = SpinnerViewController()
+
+        // add the spinner view controller
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+
+        // wait two seconds to simulate some work happening
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            // then remove the spinner view controller
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         

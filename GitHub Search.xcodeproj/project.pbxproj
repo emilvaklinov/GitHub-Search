@@ -25,6 +25,7 @@
 		481D2565247443C100F2D6BE /* GitHubData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 481D2563247443C100F2D6BE /* GitHubData.xcdatamodeld */; };
 		48F5E0D924748B84004E6B60 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F5E0D824748B84004E6B60 /* WebKit.framework */; };
 		48F5E0DB24748EC8004E6B60 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5E0DA24748EC8004E6B60 /* Extention.swift */; };
+		48F5E0DD2474981A004E6B60 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F5E0DC2474981A004E6B60 /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		481D2564247443C100F2D6BE /* GitHubData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubData.xcdatamodel; sourceTree = "<group>"; };
 		48F5E0D824748B84004E6B60 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		48F5E0DA24748EC8004E6B60 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		48F5E0DC2474981A004E6B60 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				481D252A2473F12600F2D6BE /* ViewController.swift */,
 				481D25542474184B00F2D6BE /* DetailedViewController.swift */,
+				48F5E0DC2474981A004E6B60 /* SpinnerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				481D255B24741C7A00F2D6BE /* WebViewCell.swift in Sources */,
 				481D25502473F92C00F2D6BE /* SearchCell.swift in Sources */,
 				481D254E2473F22E00F2D6BE /* Model.swift in Sources */,
+				48F5E0DD2474981A004E6B60 /* SpinnerViewController.swift in Sources */,
 				481D25292473F12600F2D6BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
