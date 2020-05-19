@@ -12,6 +12,7 @@ import WebKit
 class WebViewCell: UITableViewCell {
 
     @IBOutlet weak var webView: WKWebView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

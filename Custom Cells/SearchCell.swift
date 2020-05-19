@@ -13,11 +13,12 @@ class SearchCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    
     @IBOutlet weak var languageLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        languageLabel.font = UIFont.italicSystemFont(ofSize: 17.0)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
