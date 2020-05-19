@@ -21,6 +21,7 @@
 		481D25552474184B00F2D6BE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D25542474184B00F2D6BE /* DetailedViewController.swift */; };
 		481D255924741C5C00F2D6BE /* ResultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D255824741C5C00F2D6BE /* ResultViewCell.swift */; };
 		481D255B24741C7A00F2D6BE /* WebViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D255A24741C7A00F2D6BE /* WebViewCell.swift */; };
+		481D255D24741EBD00F2D6BE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D255C24741EBD00F2D6BE /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		481D25542474184B00F2D6BE /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		481D255824741C5C00F2D6BE /* ResultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewCell.swift; sourceTree = "<group>"; };
 		481D255A24741C7A00F2D6BE /* WebViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCell.swift; sourceTree = "<group>"; };
+		481D255C24741EBD00F2D6BE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				481D25252473F12600F2D6BE /* GitHub Search */,
-				481D254B2473F1B300F2D6BE /* Parser.swift */,
+				481D255E24741EDB00F2D6BE /* Manager */,
 				481D2557247418A500F2D6BE /* Views */,
 				481D25562474186F00F2D6BE /* ViewControllers */,
 				481D25532473F9CD00F2D6BE /* Core Data */,
@@ -158,6 +160,15 @@
 				481D25342473F12900F2D6BE /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		481D255E24741EDB00F2D6BE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				481D255C24741EBD00F2D6BE /* APIManager.swift */,
+				481D254B2473F1B300F2D6BE /* Parser.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 				481D255924741C5C00F2D6BE /* ResultViewCell.swift in Sources */,
 				481D25272473F12600F2D6BE /* AppDelegate.swift in Sources */,
 				481D25552474184B00F2D6BE /* DetailedViewController.swift in Sources */,
+				481D255D24741EBD00F2D6BE /* APIManager.swift in Sources */,
 				481D254C2473F1B300F2D6BE /* Parser.swift in Sources */,
 				481D255B24741C7A00F2D6BE /* WebViewCell.swift in Sources */,
 				481D25502473F92C00F2D6BE /* SearchCell.swift in Sources */,
