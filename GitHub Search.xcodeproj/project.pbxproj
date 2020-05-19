@@ -17,6 +17,7 @@
 		481D25412473F12900F2D6BE /* GitHub_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D25402473F12900F2D6BE /* GitHub_SearchTests.swift */; };
 		481D254C2473F1B300F2D6BE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D254B2473F1B300F2D6BE /* Parser.swift */; };
 		481D254E2473F22E00F2D6BE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D254D2473F22E00F2D6BE /* Model.swift */; };
+		481D25502473F92C00F2D6BE /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D254F2473F92C00F2D6BE /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		481D25422473F12900F2D6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		481D254B2473F1B300F2D6BE /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		481D254D2473F22E00F2D6BE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		481D254F2473F92C00F2D6BE /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,10 @@
 		481D251A2473F12600F2D6BE = {
 			isa = PBXGroup;
 			children = (
-				481D254D2473F22E00F2D6BE /* Model.swift */,
 				481D25252473F12600F2D6BE /* GitHub Search */,
+				481D25532473F9CD00F2D6BE /* Core Data */,
+				481D25522473F9A300F2D6BE /* Model */,
+				481D25512473F93F00F2D6BE /* Custom Cells */,
 				481D253F2473F12900F2D6BE /* GitHub SearchTests */,
 				481D25242473F12600F2D6BE /* Products */,
 			);
@@ -94,7 +98,6 @@
 				481D25322473F12900F2D6BE /* Assets.xcassets */,
 				481D25342473F12900F2D6BE /* LaunchScreen.storyboard */,
 				481D25372473F12900F2D6BE /* Info.plist */,
-				481D252F2473F12600F2D6BE /* GitHub_Search.xcdatamodeld */,
 			);
 			path = "GitHub Search";
 			sourceTree = "<group>";
@@ -106,6 +109,30 @@
 				481D25422473F12900F2D6BE /* Info.plist */,
 			);
 			path = "GitHub SearchTests";
+			sourceTree = "<group>";
+		};
+		481D25512473F93F00F2D6BE /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				481D254F2473F92C00F2D6BE /* SearchCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		481D25522473F9A300F2D6BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				481D254D2473F22E00F2D6BE /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		481D25532473F9CD00F2D6BE /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				481D252F2473F12600F2D6BE /* GitHub_Search.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +239,7 @@
 				481D252B2473F12600F2D6BE /* ViewController.swift in Sources */,
 				481D25272473F12600F2D6BE /* AppDelegate.swift in Sources */,
 				481D254C2473F1B300F2D6BE /* Parser.swift in Sources */,
+				481D25502473F92C00F2D6BE /* SearchCell.swift in Sources */,
 				481D254E2473F22E00F2D6BE /* Model.swift in Sources */,
 				481D25312473F12600F2D6BE /* GitHub_Search.xcdatamodeld in Sources */,
 				481D25292473F12600F2D6BE /* SceneDelegate.swift in Sources */,
